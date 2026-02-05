@@ -1,0 +1,259 @@
+<!--
+AI model: Gemini Fast
+Prompt: Create a projects page with space for a title that is centered. We should use a bootstrap accordion for displaying projects. Inside each accordion item, create a Row. Col-4: An image of the project.
+Col-8: Project Title, Objective, Description (with a bulleted list of key concepts), and a few badges (pills) at the bottom showing the languages used.
+Output:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[Page Title]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+         </nav>
+
+    <div class="container py-5">
+        <h2 class="mb-5 text-center fw-bold">[Page Heading]</h2>
+        
+        <div class="accordion" id="projectsAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        [Project Name]
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="[Image Path]" class="img-fluid rounded mb-3 mb-md-0" alt="[Alt Text]">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>[Subtitle/Category]</h5>
+                                <p><strong>Objective:</strong> [Short objective description]</p>
+                                <p><strong>Key Concepts:</strong>
+                                    <ul>
+                                        <li>[Concept 1]</li>
+                                        <li>[Concept 2]</li>
+                                        <li>[Concept 3]</li>
+                                    </ul>
+                                </p>
+                                <span class="badge bg-secondary">[Tech 1]</span>
+                                <span class="badge bg-secondary">[Tech 2]</span>
+                                <span class="badge bg-secondary">[Tech 3]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        [Project Name]
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                         </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center py-4 mt-auto m-0 bg-darker">
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Brandon Aitken</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4"> 
+            <a class="navbar-brand d-lg-none" href="home.html">&lt;Brandon Aitken&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse w-100" id="navbarContent">
+                <ul class="navbar-nav w-100 justify-content-between align-items-center">
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="navbar-brand m-0" href="home.html">&lt;Brandon Aitken&gt;</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="opacity: 1;">
+                            <img src="../resources/img/night.png" alt="Icon" width="30" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="mb-5 text-center fw-bold">Academic & Personal Projects</h2>
+        
+        <div class="accordion" id="projectsAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        VPN Protocol Prototype
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../resources/img/vpn.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Systems Project">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Network Systems Research</h5>
+                                <p><strong>Description:</strong> Designed a custom Virtual Private Network (VPN) implementation from scratch.</p>
+                                <p><strong>Key Concepts:</strong>
+                                    <ul>
+                                        <li>Implemented low-level socket programming for TCP/IP handshakes.</li>
+                                        <li>Investigated packet encapsulation and tunneling protocols.</li>
+                                        <li>Researched cryptography standards for secure data payloads.</li>
+                                    </ul>
+                                </p>
+                                <span class="badge bg-secondary">C/C++</span>
+                                <span class="badge bg-secondary">Networking</span>
+                                <span class="badge bg-secondary">Sockets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Personal Website
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../resources/img/website.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Website Project">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Front-End Development</h5>
+                                <p><strong>Objective:</strong> Designed a responsive personal portfolio website.</p>
+                                <p><strong>Key Concepts:</strong>
+                                    <ul>
+                                        <li>Utilized HTML5 and Bootstrap 5.3 for grid layouts.</li>
+                                        <li>Implemented component-based navigation.</li>
+                                        <li>Managed deployment using Git.</li>
+                                    </ul>
+                                </p>
+                                <span class="badge bg-primary">HTML5</span>
+                                <span class="badge bg-primary">Bootstrap 5.3</span>
+                                <span class="badge bg-dark">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtension">
+                        AI-Powered Browser Assistant
+                    </button>
+                </h2>
+                <div id="collapseExtension" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../resources/img/ai.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Chrome Extension">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Google Chrome Extension</h5>
+                                <p><strong>Description:</strong> Engineered a browser extension integrating LLM capabilities.</p>
+                                <p><strong>Key Concepts:</strong>
+                                    <ul>
+                                        <li>Integrated OpenAI API using asynchronous JavaScript.</li>
+                                        <li>Utilized Chrome Content Scripts for DOM manipulation.</li>
+                                        <li>Implemented secure API key management.</li>
+                                    </ul>
+                                </p>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                                <span class="badge bg-success">OpenAI API</span>
+                                <span class="badge bg-info text-dark">Manifest V3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Online Multiplayer Game
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../resources/img/game.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Roblox Project">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Roblox Studio & Luau</h5>
+                                <p><strong>Objective:</strong> Developed a scalable multiplayer game environment.</p>
+                                <p><strong>Description:</strong>
+                                    <ul>
+                                        <li>Programmed physics simulation logic using Luau.</li>
+                                        <li>Managed client-server replication.</li>
+                                        <li>Designed 3D environments and physics interactions.</li>
+                                    </ul>
+                                </p>
+                                <span class="badge bg-danger">Luau</span>
+                                <span class="badge bg-info text-dark">Roblox</span>
+                                <span class="badge bg-secondary">Physics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center py-4 mt-auto m-0 bg-darker">
+        <p class="mb-2 text-light">Connect with me</p>
+        <a href="https://github.com/beed8" target="_blank" class="text-white mx-3"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="text-white mx-3"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
