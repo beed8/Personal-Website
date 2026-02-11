@@ -109,3 +109,84 @@ footer i:hover {
     color: #fff;
     transform: scale(1.2); 
 }
+
+#calendar .col-sm {
+    background-color: #1e1e1e !important; /* Force override of bg-white */
+    border: 1px solid #333;
+    min-height: 600px; /* REQUIRED: Forces columns to be tall even if empty */
+    height: 100%;      
+    transition: box-shadow 0.3s ease;
+}
+
+#calendar .col-sm:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* 2. Fix the Modal (Dark Theme) */
+.modal-content {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+.modal-header, .modal-footer {
+    border-color: #333;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+/* Invert the Close 'X' button so it's visible on dark bg */
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Dark Theme for Form Inputs */
+.form-control, .form-select {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #333;
+    border-color: #666;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+}
+
+/* Placeholder text color */
+::placeholder {
+    color: #777 !important;
+}
+
+/* 3. Event Cards Styling (The "Tags") */
+.event {
+    border: none !important;
+    border-left: 4px solid transparent !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #e0e0e0 !important;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.event:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+/* Category Colors - Dark backgrounds with bright borders */
+.event.bg-primary {
+    background-color: #152e4d !important;
+    border-left-color: #4da3ff !important;
+}
+.event.bg-warning {
+    background-color: #423608 !important;
+    border-left-color: #ffd700 !important;
+}
+.event.bg-success {
+    background-color: #0f3d24 !important;
+    border-left-color: #2ecc71 !important;
+}
